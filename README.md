@@ -1,3 +1,5 @@
+---
+
 ```markdown
 <div align="center">
 
@@ -116,5 +118,3 @@ Designing distributed planning architectures where heterogenous LLM/VLM agents c
 I am always open to discussing research collaborations, robotics engineering challenges, or novel embodied AI ideas.
 
 ### ⚡ *Building the next generation of intelligent, real-world robotic systems.*
-
----
