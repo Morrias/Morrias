@@ -20,7 +20,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=Morrias&style=for-the-badge&color=7A5CFF"/>
 <img src="https://img.shields.io/github/followers/Morrias?style=for-the-badge&color=00FFFF"/>
-<img src="https://img.shields.io/github/stars/Morrias?affiliations=OWNER&style=for-the-badge&color=7A5CFF"/>
 
 </p>
 
@@ -34,26 +33,37 @@
 
 ```python
 class LorenzoGuiducci:
-    role = "Robotics & Embodied AI Researcher"
-    domain = ["Vision-Language-Action (VLA) Models", "Autonomous Manipulation"]
+    role = "Robotics & Embodied AI Researcher applied to Biomedical Field"
+    domain = [
+        "Vision-Language-Action (VLA) Models", 
+        "Autonomous Manipulation",
+        "Multi-Agentic Architecture",
+        "LLMs",
+        "Creating Datasets"
+    ]
     
     interests = [
-        "VLA Fine-Tuning & Quantization",
+        "VLA Fine-Tuning",
         "Robotic Manipulation & Grasping",
         "Spatial AI & Promptable Segmentation",
-        "Multi-Agent Task Allocation (MATA)",
-        "Demonstration-based Learning (LfD)"
+        "Multi-Agent System (MAS)",
+        "Demonstration-based Learning (LfD)",
+        "LLMs and prompt optimization",
+        "Reinforcement Learning"
     ]
 
     active_stack = [
-        "TIAGo Robot (PAL Robotics)",
-        "OpenVLA / Octo / RT-X",
-        "ROS / ROS 2 / MoveIt",
+        "TIAGo++ Robot (PAL Robotics)",
+        "OpenVLA",
+        "ROS", 
+        "MoveIt",
+        "Grasping architecture",
         "PyTorch / HuggingFace Transformers",
-        "Gazebo Simulation Environment"
+        "Gazebo Simulation Environment",
+        "MAS"
     ]
 
-    motto = "Teaching robots to perceive, reason, and act seamlessly in human environments."
+    motto = "Teaching robots to perceive, reason, and act to relieve lifes."
 
 ```
 
@@ -63,24 +73,26 @@ class LorenzoGuiducci:
 
 Research on end-to-end multi-modal models mapping visual observations and natural language instructions directly into executable robot end-effector control actions.
 
-* Fine-tuning OpenVLA frameworks on custom trajectory datasets.
+* Creating Datasets with novel robots and not mapped.
+* Fine-tuning VLA frameworks on custom trajectory datasets.
 * Cross-domain generalization (sim-to-real transfer).
 * Real-time inference optimization for low-latency robotic loops.
+* Benchmarking capabilities and comparison between different models.
 
 ---
 
 ### 🦾 TIAGo Manipulation & Spatial Perception
 
-Developing modular perception-to-action control pipelines using the **TIAGo** mobile manipulator platform.
+Developing modular perception-to-action control pipelines using the **TIAGo** mobile manipulator platform with the built-in camera and with an additional intel realsense d435i.
 
 ```
-📷 RGB-D / Wrist Cam ──► 🧠 Computer Vision ──► 🎯 6D Pose & Grasp ──► 🦾 Motion Planning ──► 🤖 Execution
-                        (YOLO / SAM / DINO)    (GraspNet / Custom)    (MoveIt / PyKDL)     (ROS Controllers)
+📷 RGB-D or Wrist Cam ──► 🧠 Computer Vision ──► 🎯 6D Pose & Grasp ──► 🦾 Motion Planning ──► 🤖 Execution
+                           (YOLO / SAM / DINO)    (GraspNet / Custom)     (MoveIt)               (ROS Controllers)
 
 ```
 
 ---
-
+HERE
 ### 🧠 Multi-Agent Robotic Systems
 
 Designing distributed planning architectures where heterogenous LLM/VLM agents coordinate high-level task allocation, spatial reasoning, and real-time execution in shared physical spaces.
@@ -104,14 +116,12 @@ Designing distributed planning architectures where heterogenous LLM/VLM agents c
 
 ### **Robotics & Simulation**
 
-### **Artificial Intelligence & Deep Learning**
+### **Artificial Intelligence & Reinforcement Learning**
 
 ### **Computer Vision & Spatial AI**
-
-# 📊 Analytics & Activity
 
 # 📫 Let's Connect & Collaborate
 
 I am always open to discussing research collaborations, robotics engineering challenges, or novel embodied AI ideas.
 
-### ⚡ *Building the next generation of intelligent, real-world robotic systems.*
+### ⚡ *Building the next generation of intelligent, real-world robotic systems for a better world.*
