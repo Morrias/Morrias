@@ -1,0 +1,43 @@
+<svg width="1200" height="60" viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="neon" x1="0" x2="1">
+
+<stop offset="0%" stop-color="#7A5CFF"/>
+
+<stop offset="50%" stop-color="#00FFFF"/>
+
+<stop offset="100%" stop-color="#FF00FF"/>
+
+</linearGradient>
+
+
+<filter id="glow">
+
+<feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+
+<merge>
+
+<feMergeNode in="coloredBlur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</merge>
+
+</filter>
+
+
+</defs>
+
+
+<path
+d="M0 30 Q300 10 600 30 T1200 30"
+stroke="url(#neon)"
+stroke-width="4"
+fill="none"
+filter="url(#glow)"
+/>
+
+
+</svg>

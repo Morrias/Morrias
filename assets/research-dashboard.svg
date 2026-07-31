@@ -1,0 +1,80 @@
+<svg width="1200" height="400"
+xmlns="http://www.w3.org/2000/svg">
+
+
+<rect width="1200"
+height="400"
+rx="25"
+fill="#09001A"
+stroke="#00FFFF"
+stroke-width="3"/>
+
+
+<text x="60"
+y="70"
+fill="#FF00FF"
+font-size="36"
+font-family="monospace">
+
+CURRENT RESEARCH
+
+</text>
+
+
+
+<text x="80"
+y="150"
+fill="white"
+font-size="25"
+font-family="monospace">
+
+OpenVLA Fine-Tuning
+
+</text>
+
+
+<rect x="500"
+y="125"
+width="400"
+height="25"
+fill="#7A5CFF"/>
+
+
+<text x="80"
+y="230"
+fill="white"
+font-size="25"
+font-family="monospace">
+
+TIAGo Manipulation
+
+</text>
+
+
+<rect x="500"
+y="205"
+width="330"
+height="25"
+fill="#00FFFF"/>
+
+
+
+<text x="80"
+y="310"
+fill="white"
+font-size="25"
+font-family="monospace">
+
+Multi-Agent AI
+
+</text>
+
+
+<rect x="500"
+y="285"
+width="250"
+height="25"
+fill="#FF00FF"/>
+
+
+</svg>
