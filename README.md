@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/robot.svg" width="100%" alt="Banner"/>
+<img src="./assets/robots.svg" width="100%" alt="Banner"/>
 
 <br><br>
 
