@@ -1,10 +1,178 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200">
-  <rect width="800" height="200" fill="#0d1117"/>
-  <text x="400" y="110"
-        font-size="40"
-        fill="#00FFFF"
-        text-anchor="middle"
-        font-family="monospace">
-    Hello GitHub
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="320"
+     viewBox="0 0 1200 320"
+     role="img"
+     aria-label="Lorenzo Guiducci - Robotics Engineer Banner">
+
+<!-- DEFINIZIONI (Gradienti, Filtri, Maschere) -->
+<defs>
+  <!-- Sfondo principale -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#05070d"/>
+    <stop offset="50%" stop-color="#0a0e17"/>
+    <stop offset="100%" stop-color="#05070d"/>
+  </linearGradient>
+
+  <!-- Gradienti Neon -->
+  <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00FFFF"/>
+    <stop offset="100%" stop-color="#0077ff"/>
+  </linearGradient>
+
+  <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#B24CFF"/>
+    <stop offset="100%" stop-color="#7A5CFF"/>
+  </linearGradient>
+  
+  <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF"/>
+    <stop offset="100%" stop-color="#c9d1d9"/>
+  </linearGradient>
+
+  <!-- Filtro Bagliore (Glow) Standard per GitHub -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Bagliore più ampio per l'ambiente -->
+  <filter id="heavyGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="40" result="blur"/>
+  </filter>
+
+  <!-- Griglia Ripetibile -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"/>
+  </pattern>
+
+  <!-- Maschera per sfumare la griglia dietro il testo -->
+  <linearGradient id="fadeGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+    <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+    <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <mask id="gridMask">
+    <rect width="1200" height="320" fill="url(#fadeGrad)"/>
+  </mask>
+</defs>
+
+<!-- SFONDO BASE -->
+<rect width="1200" height="320" fill="url(#bg)"/>
+
+<!-- LUCI AMBIENTALI DI SFONDO -->
+<circle cx="215" cy="140" r="120" fill="#7A5CFF" opacity="0.15" filter="url(#heavyGlow)"/>
+<circle cx="215" cy="140" r="60" fill="#00FFFF" opacity="0.15" filter="url(#heavyGlow)"/>
+<circle cx="1000" cy="160" r="100" fill="#00FFFF" opacity="0.08" filter="url(#heavyGlow)"/>
+
+<!-- GRIGLIA CYBER (con maschera di sfumatura) -->
+<rect width="1200" height="320" fill="url(#grid)" mask="url(#gridMask)"/>
+
+<!-- HUD & CIRCUITI DECORATIVI -->
+<g stroke="#00FFFF" fill="none" stroke-width="1.5" opacity="0.5">
+  <!-- Crosshairs -->
+  <path d="M40 40 v-10 h10 M40 280 v10 h10 M1160 40 v-10 h-10 M1160 280 v10 h-10"/>
+  <!-- Circuiti a destra -->
+  <path d="M980 60 h50 l20 20 h60"/>
+  <circle cx="1115" cy="80" r="4" fill="#00FFFF"/>
+  <path d="M1020 250 h40 l20 -20 h80"/>
+  <circle cx="1165" cy="230" r="4" fill="#00FFFF"/>
+</g>
+
+<!-- LINEA NEON INFERIORE -->
+<rect x="100" y="316" width="1000" height="2" fill="url(#cyanGrad)" filter="url(#glow)" opacity="0.8"/>
+<rect x="0" y="317" width="1200" height="1" fill="#7A5CFF" opacity="0.3"/>
+
+<!-- ========================================== -->
+<!-- ROBOT "EMBODIED AI" -->
+<!-- ========================================== -->
+<g transform="translate(215, 140)">
+  
+  <!-- Ologramma di base / Ombra fluttuante -->
+  <ellipse cx="0" cy="120" rx="90" ry="12" fill="none" stroke="#00FFFF" stroke-width="2" opacity="0.4" filter="url(#glow)"/>
+  <ellipse cx="0" cy="120" rx="60" ry="6" fill="#00FFFF" opacity="0.2" filter="url(#glow)"/>
+  <path d="M-80 120 L-40 0 L40 0 L80 120 Z" fill="url(#cyanGrad)" opacity="0.05"/>
+
+  <!-- Corpo (Torso) -->
+  <path d="M-45 35 Q0 90 45 35 Q50 0 0 5 Q-50 0 -45 35 Z" fill="#161b22" stroke="#7A5CFF" stroke-width="3"/>
+  
+  <!-- Nucleo centrale (Core) -->
+  <circle cx="0" cy="35" r="14" fill="#161b22" stroke="#00FFFF" stroke-width="2"/>
+  <circle cx="0" cy="35" r="8" fill="#00FFFF" filter="url(#glow)"/>
+
+  <!-- Collo fluttuante (Punto luce) -->
+  <circle cx="0" cy="-10" r="4" fill="#7A5CFF" filter="url(#glow)"/>
+
+  <!-- Braccia (Segmentate e moderne) -->
+  <g fill="none" stroke="#7A5CFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Braccio Sinistro -->
+    <path d="M-50 20 L-75 45 L-65 75"/>
+    <circle cx="-65" cy="75" r="7" fill="#161b22" stroke="#00FFFF" stroke-width="3"/>
+    <!-- Braccio Destro -->
+    <path d="M50 20 L75 45 L65 75"/>
+    <circle cx="65" cy="75" r="7" fill="#161b22" stroke="#00FFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Testa -->
+  <rect x="-60" y="-70" width="120" height="75" rx="30" fill="#161b22" stroke="url(#cyanGrad)" stroke-width="3"/>
+  
+  <!-- Visore (Schermo nero) -->
+  <rect x="-45" y="-55" width="90" height="40" rx="15" fill="#05070d"/>
+  
+  <!-- Occhi (Digitali / Espressione) -->
+  <path d="M-25 -40 Q-15 -45 -5 -40" fill="none" stroke="#00FFFF" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M5 -40 Q15 -45 25 -40" fill="none" stroke="#00FFFF" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="-15" cy="-30" r="4" fill="#00FFFF" filter="url(#glow)"/>
+  <circle cx="15" cy="-30" r="4" fill="#00FFFF" filter="url(#glow)"/>
+
+  <!-- Antenna -->
+  <path d="M0 -70 L0 -95" fill="none" stroke="#7A5CFF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="0" cy="-95" r="6" fill="#00FFFF" filter="url(#glow)"/>
+  
+</g>
+
+<!-- ========================================== -->
+<!-- TIPOGRAFIA E BADGE -->
+<!-- ========================================== -->
+<g font-family="'JetBrains Mono', 'Fira Code', 'Roboto Mono', Consolas, 'Courier New', monospace">
+
+  <!-- Nome principale -->
+  <text x="430" y="105" font-size="52" font-weight="800" fill="#FFFFFF" letter-spacing="-1">
+    Lorenzo <tspan fill="url(#cyanGrad)">Guiducci</tspan>
   </text>
+
+  <!-- Ruolo -->
+  <text x="435" y="150" font-size="24" font-weight="600" fill="url(#purpleGrad)" letter-spacing="1">
+    ROBOTICS ENGINEER
+  </text>
+  
+  <!-- BADGE DELLE COMPETENZE (Sostituiscono il testo semplice) -->
+  <g transform="translate(435, 185)">
+    <!-- Badge 1: Embodied AI -->
+    <rect x="0" y="0" width="135" height="30" rx="15" fill="#161b22" stroke="#00FFFF" stroke-width="1.5"/>
+    <text x="67.5" y="20" font-size="13" font-weight="700" fill="#00FFFF" text-anchor="middle">Embodied AI</text>
+
+    <!-- Badge 2: VLA Models -->
+    <rect x="145" y="0" width="125" height="30" rx="15" fill="#161b22" stroke="#7A5CFF" stroke-width="1.5"/>
+    <text x="207.5" y="20" font-size="13" font-weight="700" fill="#7A5CFF" text-anchor="middle">VLA Models</text>
+
+    <!-- Badge 3: TIAGo -->
+    <rect x="280" y="0" width="80" height="30" rx="15" fill="#161b22" stroke="#00FFFF" stroke-width="1.5"/>
+    <text x="320" y="20" font-size="13" font-weight="700" fill="#00FFFF" text-anchor="middle">TIAGo</text>
+
+    <!-- Badge 4: OpenVLA -->
+    <rect x="370" y="0" width="105" height="30" rx="15" fill="#161b22" stroke="#7A5CFF" stroke-width="1.5"/>
+    <text x="422.5" y="20" font-size="13" font-weight="700" fill="#7A5CFF" text-anchor="middle">OpenVLA</text>
+  </g>
+
+  <!-- Motto (Stile terminale / commento) -->
+  <text x="435" y="255" font-size="18" font-style="italic" fill="#8b949e">
+    > Teaching robots to perceive, reason and act in the physical world_
+  </text>
+
+</g>
+
 </svg>
