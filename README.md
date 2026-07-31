@@ -1,17 +1,3 @@
----
-
-### 💡 Cosa abbiamo migliorato?
-
-1. **Badge SVG coerenti e moderni:** Alcune tecnologie (come OpenCV, SAM, HuggingFace, CUDA) erano lasciate in semplice blocco di codice text. Le abbiamo convertite tutte in badge uniformi con il tema **Tokyo Night / Cyberpunk** (`#7A5CFF`, `#00FFFF`, `#1a1b26`).
-2. **Tabella per i Featured Projects:** Invece di semplici elenchi, i progetti in evidenza ora usano una **struttura a matrice o schede pulite**, rendendo immediatamente chiari la **Stack**, l'**Input/Output** e lo **Stato del Progetto**.
-3. **Sezione Pubblicazioni / Research Highlights:** Per un profilo accademico/robotico è fondamentale mostrare eventuale codice, benchmark o dataset (es. TFDS / RLDS) su cui stai lavorando.
-4. **Call to Action & Social Links:** Aggiunti badge cliccabili per **LinkedIn, Google Scholar, Email e Portfolio**, indispensabili per chi vuole contattarti.
-5. **Pulizia del layout:** Ridotta la ridondanza di divisori neon troppo ravvicinati per far "respirare" le sezioni visive (come grafici e statistiche).
-
----
-
-### 📄 Il Markdown Ottimizzato
-
 ```markdown
 <div align="center">
 
