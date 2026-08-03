@@ -63,7 +63,7 @@ class LorenzoGuiducci:
         "MAS"
     ]
 
-    motto = "Teaching robots to perceive, reason, and act to relieve lifes."
+    motto = "Teaching robots to perceive, reason, and act to improve lives."
 
 ```
 
@@ -73,7 +73,7 @@ class LorenzoGuiducci:
 
 Research on end-to-end multi-modal models mapping visual observations and natural language instructions directly into executable robot end-effector control actions.
 
-* Creating Datasets with novel robots and not mapped.
+* Creating custom datasets for novel or unmapped robotic platforms.
 * Fine-tuning VLA frameworks on custom trajectory datasets.
 * Cross-domain generalization (sim-to-real transfer).
 * Real-time inference optimization for low-latency robotic loops.
@@ -115,10 +115,35 @@ Designing distributed planning architectures where heterogenous LLM/VLM agents c
 # 🛠 Tech Stack & Frameworks
 
 ### **Robotics & Simulation**
+![ROS](https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white)
+![MoveIt](https://img.shields.io/badge/MoveIt-008080?style=for-the-badge&logoColor=white)
+![Gazebo](https://img.shields.io/badge/Gazebo-FF6F00?style=for-the-badge&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ### **Artificial Intelligence & Reinforcement Learning**
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C1C1C?style=for-the-badge&logo=chainlink&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 
 ### **Computer Vision & Spatial AI**
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logoColor=black)
+![PCL](https://img.shields.io/badge/Point_Cloud_Library-336699?style=for-the-badge&logoColor=white)
+
+<!-- 🐍 CONTRIBUTION SNAKE GRAPH -->
+<h2 align="center">🐍 Contribution Graph</h2>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Morrias/Morrias/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Morrias/Morrias/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/Morrias/Morrias/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
+</div>
+
+<br>
 
 # 📫 Let's Connect & Collaborate
 
