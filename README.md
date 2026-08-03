@@ -133,15 +133,13 @@ Designing distributed planning architectures where heterogenous LLM/VLM agents c
 ![PCL](https://img.shields.io/badge/Point_Cloud_Library-336699?style=for-the-badge&logoColor=white)
 
 <!-- 🐍 CONTRIBUTION SNAKE GRAPH -->
+<!-- 🐍 CONTRIBUTION SNAKE GRAPH -->
 <h2 align="center">🐍 Contribution Graph</h2>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Morrias/Morrias/gh-pages/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Morrias/Morrias/gh-pages/github-contribution-grid-snake.svg">
-    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/Morrias/Morrias/gh-pages/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
-</div>
+<p align="center">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Morrias/Morrias/gh-pages/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" width="100%" />
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Morrias/Morrias/gh-pages/github-contribution-grid-snake.svg#gh-light-mode-only" width="100%" />
+</p>
 
 <br>
 
